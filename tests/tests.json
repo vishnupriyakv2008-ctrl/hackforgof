@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Navigate the 16-page kindness hub and complete a challenge",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "16 distinct page views",
+      "sidebar navigation",
+      "challenge discovery",
+      "challenge completion",
+      "impact counter and streak state"
+    ],
+    "description": "Verifies the main navigation connects the distinct pages and the challenge action updates saved progress.",
+    "steps": [
+      "Open Discover challenges from the sidebar",
+      "Open a challenge detail and complete it",
+      "Open My dashboard and Kindness calendar"
+    ],
+    "expected": "Each page shows its own content; completing the challenge increments the impact total and records the current day in the dashboard and calendar."
+  },
+  {
+    "name": "Share, like, filter, and retain a community story",
+    "viewport": "desktop",
+    "covers": [
+      "share deed form validation",
+      "community wall post creation",
+      "story likes",
+      "category filtering and search",
+      "localStorage persistence"
+    ],
+    "description": "Checks the full community contribution flow and durable browser-local state.",
+    "steps": [
+      "Open Share a good deed and submit a story with at least eight characters",
+      "Open Community wall and like the new story",
+      "Filter the wall and search for a word from the story",
+      "Refresh the page"
+    ],
+    "expected": "The new story appears, its heart count changes, filtering/search work, and the story and like remain after refresh."
+  },
+  {
+    "name": "Save a journal reflection and profile preferences",
+    "viewport": "desktop",
+    "covers": [
+      "journal entry creation",
+      "profile editing",
+      "settings toggles",
+      "saved challenge list"
+    ],
+    "description": "Verifies personal pages support editable content and preferences.",
+    "steps": [
+      "Open Kindness journal and save a titled reflection",
+      "Open Settings, change the display name and a preference, then save",
+      "Open My profile"
+    ],
+    "expected": "The reflection appears in the journal, the updated name appears in the profile, and the preference remains active during the session."
+  },
+  {
+    "name": "Use navigation and community pages on a mobile viewport",
+    "viewport": "mobile",
+    "covers": [
+      "responsive sidebar drawer",
+      "mobile challenge grid",
+      "calendar responsiveness",
+      "event join interaction",
+      "mobile feed search"
+    ],
+    "description": "Checks the main mobile navigation and representative interactive page layouts.",
+    "steps": [
+      "Tap the standard three-line hamburger icon in the top-left to open the navigation drawer",
+      "Tap the menu toggle again to close it, then reopen it and use the drawer close button",
+      "Tap the backdrop to dismiss the menu, then reopen it",
+      "Choose Discover challenges and verify the drawer closes after navigation",
+      "Open the menu again and press Escape to dismiss it",
+      "Open Kindness calendar and navigate to the previous month",
+      "Open Kindness events and mark an event as interested",
+      "Open Community wall and search for a story"
+    ],
+    "expected": "The standard three-line hamburger icon opens the left drawer and changes to a close icon while open; the toggle, drawer close button, backdrop, or Escape key dismisses it, and selecting a menu option navigates and closes it automatically. Pages remain usable without horizontal overflow, calendar navigation works, event interest toggles, and story search filters results."
+  },
+  {
+    "name": "Validate forms and reset local demo data",
+    "viewport": "desktop",
+    "covers": [
+      "empty story validation",
+      "journal validation",
+      "local demo data reset confirmation",
+      "browser-local privacy disclosure"
+    ],
+    "description": "Ensures invalid entries are blocked and the user can intentionally reset local demo state.",
+    "steps": [
+      "Submit Share a good deed with fewer than eight characters",
+      "Open Kindness journal and submit without a title",
+      "Open Settings and confirm Reset local demo data"
+    ],
+    "expected": "Invalid forms show validation feedback without creating records; confirming reset clears local progress and restores the starter demo data."
+  }
+]
