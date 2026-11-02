@@ -1,6 +1,6 @@
 [
   {
-    "name": "Navigate the 16-page kindness hub and complete a challenge",
+    "name": "Navigate the 17-page kindness hub, explore belonging, and complete a challenge",
     "sanity": true,
     "viewport": "desktop",
     "covers": [
@@ -8,15 +8,20 @@
       "sidebar navigation",
       "challenge discovery",
       "challenge completion",
-      "impact counter and streak state"
+      "impact counter and streak state",
+      "inclusive belonging page",
+      "faith-neutral respect principles",
+      "inclusion and equality challenge discovery"
     ],
     "description": "Verifies the main navigation connects the distinct pages and the challenge action updates saved progress.",
     "steps": [
       "Open Discover challenges from the sidebar",
       "Open a challenge detail and complete it",
-      "Open My dashboard and Kindness calendar"
+      "Open My dashboard and Kindness calendar",
+      "Open Belonging & respect from the Explore menu and review the equal-dignity message",
+      "Choose Explore inclusion challenges and verify the Inclusion & equality filter is selected"
     ],
-    "expected": "Each page shows its own content; completing the challenge increments the impact total and records the current day in the dashboard and calendar."
+    "expected": "All 17 pages are reachable; the Belonging & respect page communicates equal dignity for every faith and none; inclusion challenges are filterable; completing a challenge updates progress."
   },
   {
     "name": "Share, like, filter, and retain a community story",
@@ -26,16 +31,19 @@
       "community wall post creation",
       "story likes",
       "category filtering and search",
-      "localStorage persistence"
+      "localStorage persistence",
+      "Inclusion & equality post categorization"
     ],
     "description": "Checks the full community contribution flow and durable browser-local state.",
     "steps": [
       "Open Share a good deed and submit a story with at least eight characters",
       "Open Community wall and like the new story",
       "Filter the wall and search for a word from the story",
-      "Refresh the page"
+      "Refresh the page",
+      "Submit a story and select Inclusion & equality as its category",
+      "Filter the Community wall by Inclusion & equality"
     ],
-    "expected": "The new story appears, its heart count changes, filtering/search work, and the story and like remain after refresh."
+    "expected": "The story appears on the wall with its chosen category, its heart count changes when liked, search and filtering work (including Inclusion & equality), and the story and like remain after refresh."
   },
   {
     "name": "Save a journal reflection and profile preferences",
